@@ -14,7 +14,7 @@ The aim of this action is to posts text message to your slack channel that are l
 
 ### webhook
 
-**Required** The webhook to your slack channel
+**Required** The webhook to your slack channel, never use a URL directly as Slack will automatically remove it. Use your Github secrets.
 
 ### Example
 
