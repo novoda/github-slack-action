@@ -24,5 +24,5 @@ The aim of this action is to posts text message to your slack channel that are l
   with:
     color: danger
     text: This is a danger example text
-    webhook: https://hooks.slack.com/services/...
+    webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
 ```
