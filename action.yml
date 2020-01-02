@@ -1,0 +1,23 @@
+name: 'Slack post message'
+description: 'Post a simple message to slack'
+inputs:
+  color:
+    description: 'The left vertical line color of your message'
+    required: true
+    default: 'good'
+  text:
+    description: 'You message, markdown is not supported'
+    required: true
+  webhook:
+    description: 'Your slack channel webhook'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.color }}
+    - ${{ inputs.text }}
+    - ${{ inputs.webhook }}
+branding:
+  icon: 'message-square'
+  color: 'green'
