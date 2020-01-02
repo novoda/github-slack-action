@@ -4,15 +4,15 @@ The aim of this action is to posts text message to your slack channel that are l
 
 ## Inputs
 
-### COLOR
+### color
 
 **Required** Changes the color of the border on the left side of this attachment from the default green. Can either be one of good (green), warning (yellow), danger (red), or any hex color code (eg. #439FE0)
 
-### TEXT
+### text
 
 **Required** The message that you want to post. Markdown is not supported.
 
-### WEBHOOK
+### webhook
 
 **Required** The webhook to your slack channel
 
