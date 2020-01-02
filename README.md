@@ -15,3 +15,14 @@ The aim of this action is to posts text message to your slack channel that are l
 ### WEBHOOK
 
 **Required** The webhook to your slack channel
+
+### Example
+
+```
+- name: Post to slack
+  uses: novoda/github-slack-action@master
+  with:
+    color: danger
+    text: This is a danger example text
+    webhook: https://hooks.slack.com/services/...
+```
