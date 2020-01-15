@@ -24,9 +24,9 @@ You can also mention users by providing the necessary information described in t
 
 ### mentionPairs
 
-Provide a list of githubUsername-slackMemberId comma separated
+Provide a list of githubUsername::slackMemberId space separated
 
-> ferran-U0111, clara-U0121
+> ferran::U0111 clara::U0121
 
 When this field is populated then all githubUsername's that appear in the **text** field will be mentioned in slack
 
@@ -41,5 +41,5 @@ When this field is populated then all githubUsername's that appear in the **text
     color: danger
     text: This is a danger example text for ferran
     webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
-    mentionPairs: ferran-U0111, clara-U0121
+    mentionPairs: ferran::U0111 clara::U0121
 ```

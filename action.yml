@@ -12,7 +12,7 @@ inputs:
     description: 'Your slack channel webhook'
     required: true
   mentionPairs:
-    description: 'A list of githubUsername-slackMemberId comma separated to use for mentioning a githubHusername in the text field in Slack'
+    description: 'A list of githubUsername::slackMemberId space separated to use for mentioning a githubHusername in the text field in Slack'
     required: false
 runs:
   using: 'docker'
