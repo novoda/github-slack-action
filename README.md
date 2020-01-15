@@ -6,6 +6,8 @@ The aim of this action is to posts text message to your slack channel that are l
 
 ![Danger message](https://github.com/novoda/github-slack-action/blob/master/resources/negative-example.png)
 
+You can also mention users by providing the necessary information described in the **mentionPairs** parameters description
+
 ## Inputs
 
 ### color
@@ -20,6 +22,16 @@ The aim of this action is to posts text message to your slack channel that are l
 
 **Required** The webhook to your slack channel, never use a URL directly as Slack will automatically remove it. Use your Github secrets.
 
+### mentionPairs
+
+Provide a list of githubUsername-slackMemberId comma separated
+
+> ferran-U0111, clara-U0121
+
+When this field is populated then all githubUsername's that appear in the **text** field will be mentioned in slack
+
+###
+
 ### Example
 
 ```
@@ -27,6 +39,7 @@ The aim of this action is to posts text message to your slack channel that are l
   uses: novoda/github-slack-action@master
   with:
     color: danger
-    text: This is a danger example text
+    text: This is a danger example text for ferran
     webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+    mentionPairs: ferran-U0111, clara-U0121
 ```

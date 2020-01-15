@@ -11,6 +11,9 @@ inputs:
   webhook:
     description: 'Your slack channel webhook'
     required: true
+  mentionPairs:
+    description: 'A list of githubUsername-slackMemberId comma separated to use for mentioning a githubHusername in the text field in Slack'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -18,6 +21,7 @@ runs:
     - ${{ inputs.color }}
     - ${{ inputs.text }}
     - ${{ inputs.webhook }}
+    - ${{ inputs.mentionPairs }}
 branding:
   icon: 'message-square'
   color: 'green'
