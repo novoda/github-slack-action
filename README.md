@@ -1,6 +1,6 @@
 # github-slack-action
 
-The aim of this action is to posts text message to your slack channel that are linked to a validation status. For example, you migh want to post a green flagged message for a validation text; or a red flagged message for a warning text.
+The aim of this action is to posts text message to your slack channel that are linked to a validation status. For example, you might want to post a green flagged message for a validation text; or a red flagged message for a warning text.
 
 ![Good message](https://github.com/novoda/github-slack-action/blob/master/resources/positive-example.png)
 
